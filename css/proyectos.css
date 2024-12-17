@@ -1,0 +1,246 @@
+:root{
+    --color-navbar: rgb(82, 84, 98);
+    --color-hero:rgb(240, 245, 245);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/*Barra de navegacion*/
+.custom {
+    display: inline-block; 
+    width: 50px; 
+    height: 50px; 
+    box-sizing: border-box; 
+    padding: 1px;
+}
+
+.custom img {
+    display: flex;
+    justify-content: right;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+.navbar{
+    padding: 1.5rem;
+    background-color: var(--color-navbar);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.nav-link {
+    color: #ffffff; 
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000000; 
+    transform: scale(1.2);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:767px) {
+    .navbar-toggler {
+    border: 2px solid white;
+    background-color: white;
+    }
+    
+    .nav-link {
+        color: #ffffff;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+        color: rgb(0, 0, 0);
+        transform: none;
+    }
+}
+
+/*Proyectos*/
+.recientes-proyectos{
+    padding:40px ;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", system-ui;
+}
+.tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-negro{
+    color: black;
+}
+.texto-blanco{
+    color:white;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #1b1b32;
+}
+.recientes-proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.proyectos-container{
+    padding:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    border-radius: 50px;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.overlay .icons-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.overlay i{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    margin: 10px;
+}
+.proyecto{
+    position: relative;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+.btn-outline-info{
+    font-size: large1.1rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* FOoter */
+footer{
+    min-height: 500px;
+    background-color: var(--color-navbar);
+}
+.footer-img{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.icons-redes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2.5px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.icons-redes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.icons-redes a:hover{
+    background-color: white;
+    border: 2px solid rgb(10, 28, 74);
+}
+.icons-redes a:hover i {
+    color: var(--color-navbar);
+}
+.derechos{
+    font-size: 1rem;
+    color: #b3b1b1;
+    padding: 20px;
+}
+
+/*Adaptables*/
+@media screen and (min-width:700px) {
+    .hero-inferior-image{
+        max-width: 600px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .recientes-proyectos{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .testimonio-texto{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .contacto .description{
+        color: white;
+        font-size: 0.8rem;
+    }
+    .contacto button{
+        margin: 15px;
+        border-radius: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+    .seccion-titulo{
+        font-size: 1.5rem;
+    }
+    .contacto button i {
+        color: white;
+        font-size: 1.3rem;
+        transition: all 0.2s ease-in-out;
+    }
+}
+

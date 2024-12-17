@@ -1,0 +1,105 @@
+
+
+/* Articulos */
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+}
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 60px;
+}
+
+/* Testimonios */
+
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel{
+    max-width: 1000px;
+}
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.test{
+    margin-bottom: 50px;
+}
+.text-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 20px 10px;
+}
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.testimonio-info{
+    text-align: center;
+    font-weight: bold;
+}
+.cliente{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+.testimonio-info .cargo{
+    font-size: 0.7rem;
+    color: #07070a;
+}
+
+/* COntacto */
+.contacto .container{
+    background-color: #07070a;
+    padding: 20px;
+    max-width: 100%;
+    min-height: 200px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(9, 101, 194);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+    width: 80%;
+}
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.contacto .description{
+    color: white;
+    font-size: 1.2rem;
+}
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+    color: black;
+}

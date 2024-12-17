@@ -1,0 +1,254 @@
+:root{
+    --color-navbar: rgb(82, 84, 98);
+    --color-hero:rgb(240, 245, 245);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/*Barra de navegacion*/
+.custom {
+    display: inline-block; 
+    width: 50px; 
+    height: 50px; 
+    box-sizing: border-box; 
+    padding: 1px;
+}
+
+.custom img {
+    display: flex;
+    justify-content: right;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+.navbar{
+    padding: 1.5rem;
+    background-color: var(--color-navbar);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.nav-link {
+    color: #ffffff; 
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000000; 
+    transform: scale(1.2);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:767px) {
+    .navbar-toggler {
+    border: 2px solid white;
+    background-color: white;
+    }
+    
+    .nav-link {
+        color: #ffffff;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+        color: rgb(0, 0, 0);
+        transform: none;
+    }
+}
+
+
+
+
+/*Seccion principal*/
+.hero{
+    background-color: var(--color-hero);
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.img-hero{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: rgb(63, 71, 71);
+}
+
+/*Seccion sobre mi*/
+
+.sobre-mi{
+    color: white;
+    background-color: rgb(37, 36, 35);
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+/*Experiencia*/
+.experiencia{
+    padding: 40px;
+}
+.experiencia .column{
+    padding: 28px;
+    border: 2px solid rgb(0, 0, 0) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2x ease-in;
+}
+.experiencia .column:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+.seccion-clara{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.experiencia i {
+    font-size: 2.2rem;
+    color: rgb(251, 251, 251);
+    background-color: rgb(26, 25, 25);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.experiencia:hover i {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+}
+.experiencia .title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges{
+    margin: 5px;
+}
+
+/* FOoter */
+footer{
+    min-height: 500px;
+    background-color: var(--color-navbar);
+}
+.footer-img{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.icons-redes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2.5px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.icons-redes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.icons-redes a:hover{
+    background-color: white;
+    border: 2px solid rgb(10, 28, 74);
+}
+.icons-redes a:hover i {
+    color: var(--color-navbar);
+}
+.derechos{
+    font-size: 1rem;
+    color: #b3b1b1;
+    padding: 20px;
+}
+
+/*Adaptables*/
+@media screen and (min-width:700px) {
+    .hero-inferior-image{
+        max-width: 600px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .recientes-proyectos{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .testimonio-texto{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .contacto .description{
+        color: white;
+        font-size: 0.8rem;
+    }
+    .contacto button{
+        margin: 15px;
+        border-radius: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+    .seccion-titulo{
+        font-size: 1.5rem;
+    }
+    .contacto button i {
+        color: white;
+        font-size: 1.3rem;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
